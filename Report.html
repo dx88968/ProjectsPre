@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <link href="main.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="scripts/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="scripts/myjs.js"></script>
+        <title>Final Project By XUNXU</title>
+     </head>
+	 <body>
+         <h1 style="text-align: center">New break throughs in Computer Security</h1>
+         <h2 style="text-align: center">By Xun Xu</h2>
+	 <div class="transparentMainpanel">
+	 <div class="tagList">
+	    <div id="tag1" class="tag">
+		<h2>Big Events</h2>
+	    </div>
+	    <div id="tag2" class="tag">
+		<h2>Key Persons</h2>
+	    </div>
+	    <div id="tag3" class="tag">
+		<h2>Summary</h2>
+	    </div>
+	    <div style="clear:both;"></div>
+	</div>
+	
+	 <div id="bigevent" class="mainpanel">
+         <h2>Primary progress or events in Computer Security from 2008 to 2012:</h2>
+         <ul>
+             <li><a href="Report.html#cloudsecurity">The birth of Cloud Security(2008)</a></li>
+             <li><a href="Report.html#smudge">Have you heard of Smudge attack?(2010)</a></li>
+             <li><a href="Report.html#virtualizedfirewalls">Palo Alto Networks targets VMware shops with virtualized next-gen firewalls(2012)</a></li>
+         </ul>
+	 <h2>Brief Instruction</h2>
+	 <p>
+	    Cloud techonoly has been recoginized as one of the most popular IT techonolies. And coming with the raise of cloud techonoly, the security issue involving
+	    protection of sensitive information on cloud business platforms is getting more important. Eventually, the concept of cloud security is firstly stated by
+	    Trend Micro in May 2008.<br/>
+	    If you have ever used a smartphone with Android system, you must be very familiar with the very unique "Android password pattern" password system, this is kind
+	    of a prefect password system ------ effient and convenient. But reseachers in the University of Pennsylvania developed a new type of physical attack called
+	    "Smudge attack" which made this password system rather vulnerable in 2010.<br/>
+	    People in security area are never tired of developping new types of firewalls. Recently, the concept of virtualized firewall has been proposed by
+	    Palo Alto Networks, but why do these people call it a "next-gen firewall", and what are the features of this new-borned security product?
+	 </p>
+	 <h2 id="cloudsecurity">Cloud Security</h2>
+	 <h3>Section 1: Beginning of the story</h3>
+         <p>On May 31th in New York City, Trend Micro announced its Trend Micro Smart Protection Network, a new type of security model that marries a lightweight desktop
+	 agent to Trend's vast network-based resources in the cloud.</p>
+	 <div class="citeimg">
+		 <img src="images/01.gif">
+	    <div class="tip">
+		<p>Picture 1-1:Origin of Cloud Security</p>
+	    </div>
+	 </div>
+	 <p>This was the first time that Cloud Security called people's attention as a independent security issue, which was also a milestone for computer security development. Because
+	 security is really an essential issue in Cloud Computing.</p>
+	 <h3>Section 2: Why is Cloud Security important?</h3>
+	 <p>First of all, the cloud computing industry is growing fast as picture 1-2 says "The size of the market of cloud computing will increase to around 160 Billion".</p>
+	 <div class="citeimg">
+		 <img src="images/02.png">
+	    <div class="tip">
+		<p>Picture 1-2:Rise of Cloud Computing</p>
+	    </div>
+	 </div>
+	 <p>
+	    Under this circumstance, people started to realize that cloud computing is actually rather vulnerable.<br/>
+	    Here are the risks of Cloud Computing:
+	    <ul>
+	       <li>Confidentiality</li>
+	       <p style="margin-left: 0px">loss of confidentiality can occur through the intentional release of private company information or through a misapplication of network rights. And because information in cloud is
+	       wide spreaded on distributed devices, the risk of leaking information is greatly increased.</p>
+	       <li>Integrity</li>
+	       <p style="margin-left: 0px">Loss of integrity can occur through an intentional attack to change information (for example, a website defacement) or, more commonly, unintentionally (data is accidentally altered by an operator). And
+	       generally proof of integrity is depended on the identification of sercive vendors (centre servers), but there is no entity like centre server in cloud computing which makes the traditional integrity verification impossible.</p>
+	       <li>Availability</li>
+	       <p style="margin-left: 0px">This concept refers to the elements that create reliability and stability in networks and systems.
+	       It ensures that connectivity is accessible when needed, allowing authorized users to access the network or systems. Traditionally, we can ensure the availability by protenting the centre servers which is not pratical in cloud-based
+	       distributed servers.</p>
+	       <li>Privacy</li>
+	       <p style="margin-left: 0px">One area that is greatly affected by cloud computing is privacy. It's important to remember that although the
+	       control of cloud computing privacy has many threats and vulnerabilities in common with noncloud processes and infrastructure, it also has unique security issues.</p>
+	    </ul>
+	    <p>And there are risks for Cloud Service Providers <label class="cite">(Cite from Krutz, Ronald L.; Vines, Russell Dean; Brunette, Glenn. Cloud Security : A Comprehensive Guide to Secure Cloud Computing.
+	    Hoboken, NJ, USA: Wiley, 2010. p 147.)</label>:</p>
+	    <ul>
+		<li>Complexity of configuration</li>
+		<p style="margin-left: 0px">Virtual systems add more layers of complexity to networks and systems, greatly increasing
+		the possibility of improper configuration or the induction of heretofore unseen vulnerabilities.</p>
+		<li>Privilege escalation</li>
+		<p style="margin-left: 0px">A hacker may be able to escalate his or her privileges on a system by
+		leveraging a virtual machine using a lower level of access rights, then attack a VM with a higher level of security controls through the hypervisor.</p>
+		<li>Inactive virtual machines</li>
+		<p style="margin-left: 0px">Virtual machines that are not active (i.e., are dormant), could store data that is sensitive. Monitoring access to that data in a dormant VM is virtually impossible, but provides a security risk through the loss of or
+		access to the VM. Also, monitoring tools for VM systems are not as mature as traditional tools, but are expected to improve quickly.</p>
+		<li>Segregation of duties</li>
+		<p style="margin-left: 0px">A virtualized system poses risk to organizations through the improper definition of user access roles. Because the VM provides access to many type of
+		components from many directions, proper segregation of duties may be difficult to maintain.</p>
+		<li>Poor access controls</li>
+		<p style="margin-left: 0px">The virtual machine's hypervisor facilitates hardware virtualization and mediates all hardware access for the running virtual machines. This creates a new attack vector into the VM, due to its single point of access. Therefore,
+		the hypervisor can expose the trusted network through poorly designed access control systems, deficient patching,
+		and lack of monitoring. This vulnerability also applies to virtualized databases.</p>
+	    </ul>
+	 </p>
+	 <h3>Section 3: Summary on Cloud Security</h3>
+	 <p>The extensive use of virtualization in implementing cloud infrastructure brings unique security concerns for customers or tenants of a public cloud service, and the birth of the cloud security is a very impressive breakthough in the field of
+	 computer security.</p>
+	 <h2 id="smudge">Smudge attack</h2>
+	 <h3>Section 1: Android Password Pattern</h3>
+	 <p>People always love the android pattern passwords. They are cool, fun, and do a good job at protecting your phone from the kids. </p>
+	 <div class="citeimg">
+		 <img src="images/03.jpg">
+	    <div class="tip">
+		<p>Picture 2-1: Android Password Pattern</p>
+	    </div>
+	 </div>
+	 <p>But this very convenient password system can be cracked by a special kind of physical attack called "Smudge Attack".</p>
+	 <h3>Section 2: What is smudge attack?</h3>
+	 <p>Penn State researchers managed to identify the pass code patterns on two Android smartphones (the HTC G1 and the HTC Nexus One), 68% of the time,
+	 using photographs taken under different lighting conditions, and camera positions in 2010.</p>
+	 <div class="citeimg">
+		 <img src="images/04.png">
+	    <div class="tip">
+		<p>Picture 2-2: The password track will show under certain light conditions</p>
+	    </div>
+	 </div>
+	 <p>By analyzing those pass code patterns, attackers can possibly guess the password the owner of the android smartphone. "Oily residues, or smudges, on the touch screen
+	    surface, are one side effect of touches from which frequently used patterns such as a graphical password might
+	    be inferred".</p>
+	 <h3>Section 3: The impact to the field of Computer Security from Smudge Attack</h3>
+	 <p>The existence of smudge attack changes the definition of secure in Computer Security involving devices equipping touch screens.
+	 Because in this case, the leak of information is not caused by any software or hardware design faults, and the confidentiality of information on certain device
+	 is not ganranteed if there is no assurance of no unanthenrized access of that device.</p>
+	 <h2 id="virtualizedfirewalls">Virtualized Firewalls</h2>
+	 <h3>Section 1: Breif Introduction</h3>
+	 <p>We have talked about <a href="Report.html#cloudsecurity">Cloud Security</a> in this report, and the visual firewall is a vital conponent in guiding Cloud Secrity.</p>
+	 <p> A virtual firewall (VF) is a network firewall service or appliance running entirely within a virtualized environment and which provides the usual packet filtering and monitoring provided via a physical network firewall. The VF can be realized as a traditional software firewall on a guest virtual machine already running, a purpose-built virtual
+	 security appliance designed with virtual network security in mind, a virtual
+	 switch with additional security capabilities, or a managed kernel process running within the host hypervisor.<label class="cite">(Cited from Wiki)</label>
+	 </p>
+	 <div class="citeimg">
+		 <img src="images/05.jpg">
+	    <div class="tip">
+		<p>Picture 3-1: How virtual firewalls look like</p>
+	    </div>
+	 </div>
+	 <h3>Section 2: Breaking News</h3>
+	 <p>Palo Alto Networks Tuesday unveiled the first
+	    virtualized version of its next-generation firewall, server-based software
+	    intended to run on the VMware platform to allow security managers to set up
+	    firewall application-layer controls in virtual machines (VM) on Nev 13, 2012.</p>
+	 <div class="citeimg">
+		 <img src="images/06.png">
+	    <div class="tip">
+		<p>Picture 3-2: Palo Alto Networks released their next-generation firewall</p>
+	    </div>
+	 </div>
+	 <h3>Section 3: New features in Palo Alto Virtualized Firewall</h3>
+	 <p>Why do I call this new type of firewall as a "next-generation" product?<br/>
+	 Because it has the following new features:</p>
+	 <ul>
+	    <li>Nice Compatibility with VM-to-VM Network Environment</li>
+	    <p style="margin-left: 0px">The company's new VM-Series software is intended to overcome the limitation
+	    that physical firewall appliances face in virtualized environments in that they
+	    don't fit directly between VM-to-VM intra-host traffic flows, says Chris King,
+	    director of product marketing.</p>
+	    <li>Allow to set Application Layer Controls</li>
+	    <p style="margin-left: 0px">Palo Alto Virtualized Firewall goes beyond traditional port-based firewalls to allow for setting up applicationlayer
+	    controls related to users and machine-to-machine processing.</p>
+	 </ul>
+	 </div>
+	 <div id="keyperson" style="display: none" class="mainpanel">
+	    <h2>Key Persons in Computer Security from 2008 to 2012</h2>
+	    <h3>Dave Cullinane</h3>
+	    <div class="peoplePanel">
+		<p>
+		<img style="padding: 0px" src="images/07.jpg" align="left">
+		    Dave Cullinane is the Chief Information Security Officer (CISO) for eBay. Prior to 
+		    joining eBay, Dave was the CISO for Washington Mutual; one of the largest banks in the 
+		    United States. Prior to Washington Mutual, Dave was a Senior Consultant for nCipher, 
+		    Inc.; the Director of Information Security for Sun Life of Canada's U.S. operations and 
+		    helped create Digital Equipment Corporation's Security Consulting Practice. He has more 
+		    than 20 years of security experience and is Board Certified in Security Management by 
+		    ASIS International as a Certified Protection Professional (CPP). He is also a Certified 
+		    Information Systems Security Professional (CISSP) and a former Certified Business 
+		    Continuity Professional (CBCP).
+		    Dave is a Charter Member of the Alliance for Enterprise Security Risk Management 
+		    (AESRM) - an alliance of security professional associations dedicated to advancing the 
+		    Profession. He is the current Past International President of the Information Systems 
+		    Security Association (ISSA); and a Charter Member of the Global Council of Chief 
+		    Security Officers. He serves on ASIS International's Information Technology Security 
+		    Committee (ITSC) and is on the Editorial Advisory Board of CSO Magazine and SC 
+		    Magazine. He was nominated for Information Security Executive of the Year for 2004 
+		    and 2005 and awarded SC Magazine's Global Award as Chief Security Officer of the 
+		    Year for 2005. He was awarded CSO Magazine's 2006 Compass Award as a "Visionary 
+		    Leader of the Security Profession."<br/>
+		    The reason that Dave became the key person in security is that he is among the cofounders
+		     of <label style="font-style: italic ">Cloud Security Alliance</label>, an organization aimming at "to promote the use of best practices
+		     for providing security assurance within Cloud Computing, and to provide education on the uses
+		     of Cloud Computing to help secure all other forms of computing", in 2008.
+		</p>
+	    </div>
+	    <h3>John McAfee</h3>
+	    <div class="peoplePanel">
+		<p>
+		<img style="padding: 0px" src="images/08.jpg" align="left" width="150px">
+		    McAfee was employed as a programmer by NASA's Institute for Space Studies in New York City from 1968 to 1970. From there he went to Univac as a software designer and later to Xerox as an operating system architect. In 1978 he joined Computer Sciences Corporation as a software consultant. Later, while employed by Lockheed in the 1980s, McAfee received a copy of the Pakistani Brain computer virus and began developing software to combat viruses.
+		    In 1987 McAfee founded McAfee Associates, a computer anti-virus company. He was the first to distribute anti-virus software using the shareware business model.[citation needed] In 1989, he quit Lockheed and began working full-time at McAfee Associates, which he initially operated from his home in Santa Clara, California. The company was incorporated in the state of Delaware in 1992, and McAfee resigned from the company in 1994. Two years after McAfee Associates went public, McAfee sold his remaining stake in the company. Network Associates was formed in 1997 as a merger of McAfee Associates and Network General. This company later became Network Associates, a name it retained for seven years until it was renamed McAfee. McAfee remains today as one of the largest anti-virus companies in the world.
+		    Other business ventures that he founded included Tribal Voice, which developed one of the first instant messaging programs, PowWow. In 2000, John McAfee invested in and joined the board of directors of Zone Labs, makers of firewall software, prior to its acquisition by Check Point Software in 2003.
+		    In August 2009, The New York Times reported that McAfee's personal fortune had declined to $4 million from a peak of $100 million, the effect of the global financial crisis and recession on his investments.
+		    Beginning in February 2010, McAfee started a new venture in the field of bacterial quorum sensing. His company QuorumEx is headquartered in Belize and is working towards producing commercial all natural antibiotics based on anti-quorum sensing technology.
+		    <br/>However, the reason that he becomes key person in security is not for any of his techonolgy contribution, but for a very astonishing word he said in 2012: when asked if he personally uses McAfee anti-virus he replied by saying "I take it off," and that "It's too annoying."
+		</p>
+	    </div>
+	 </div>
+	 <div id="summary" style="display: none" class="mainpanel">
+	    <h2>Summary</h2>
+	    <a style="margin-left: 30px" href="files/summary.docx">Download summary.docx</a>
+	    <h2>References</h2>
+	    <p>
+	    1. Krutz, Ronald L.; Vines, Russell Dean; Brunette, Glenn. Cloud Security : A Comprehensive Guide to Secure Cloud Computing.
+	    Hoboken, NJ, USA: Wiley, 2010. p 147.<br/>
+	    2. Jon Oltsik: Trend Micro Marries Security with Cloud Computing, 2008<br/>
+	    3. Marshall Cavendish: Inventors and Inventions, 2007. p. 1030<br/>
+	    4. Adam J. Aviv, Katherine Gibson, Evan Mossop, Matt Blaze, and Jonathan M. Smith: Smudge Attacks on Smartphone Touch Screens<br/>
+	    5. Ellen Messmer: Palo Alto Networks targets VMware shopswith virtualized next-gen firewalls, 2012<br/>
+	    </p>
+	 </div>
+	 </div>
+	</body>
+</html>

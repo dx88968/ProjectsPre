@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <link href="main.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="scripts/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="scripts/myjs.js"></script>
+        <title>Projects Presetations</title>
+     </head>
+     <body>
+         <h1 style="text-align: center">Projects Presetations</h1>
+         <h2 style="text-align: center">By Xun Xu</h2>
+	 <div class="transparentMainpanel">
+	 <div class="tagList">
+	    <div id="tag1" class="tag">
+		<h2>Sharemi</h2>
+                <h4>2012.9-2012.11</h4>
+	    </div>
+	    <div id="tag2" class="tag">
+		<h2>DigitalSales</h2>
+                <h4>2012.9-2012.10</h4>
+	    </div>
+	    <div id="tag3" class="tag">
+		<h2 style="margin-top: 3px">Estate Bubble<br/> Simulator</h2>
+                <h4 style="margin-top: 3px">2012.3-2012.5</h4>
+	    </div>
+            <div id="tag4" class="tag">
+		<h2>XX Searcher</h2>
+                <h4>2010</h4>
+	    </div>
+            <div id="tag5" class="tag">
+		<h2>ZooKeeper</h2>
+                <h4>2008</h4>
+	    </div>
+	    <div style="clear:both;"></div>
+	</div>
+	
+	 <div id="sharemi" class="mainpanel">
+         <h2>Sharemi Project</h2>
+         <h3>Section 1: What is Sharemi?</h3>
+         <p>Sharemi is a implementation of location based file service.<br/>Users can upload local files to our file server using a local App we provide, and after that he can:</p>
+         <ul><li>Enable any other Sharemi who is near enough to him can download the file.</li><li>Other user who bump his phone with him can download the file.</li></ul>
+         <p>Here are some snaps of this App.</p>
+         <p>After logged in, user can pick a file to share by pressing "Share Files".</p>
+         <div class="citeimg">
+		 <img src="images/pic2.JPG" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 1-2:Main Panel</p>
+	    </div>
+	 </div>
+         <div class="citeimg">
+		 <img src="images/pic3.JPG" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 1-3:Pick a file to share</p>
+	    </div>
+	 </div>
+         <p>When a file has been shared, Other user who are within 10 metres from the file owner will see this file in "Shared with me".</p>
+         <div class="citeimg">
+		 <img src="images/pic4.JPG" style="float: left;margin-left: 150px" alt="picture"/><img src="images/pic5.JPG" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 1-4:Download a shared file</p>
+	    </div>
+	 </div>
+         <p>If a file is marked with "private" then one needs to bump with its owner to download it.</p>
+         <div class="citeimg">
+		 <img src="images/pic6.JPG" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 1-6:Authentication with BUMP Service</p>
+	    </div>
+	 </div>
+         <p>After bumping your phone with the file owner's phone, your download request will be accepted.</p>
+         <div class="citeimg">
+		 <img src="images/pic7.jpg" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 1-7: Successfully download the file after bumping</p>
+	    </div>
+	 </div>
+         <h3>Section 2: Sharemi Architecture</h3>
+         <div class="citeimg">
+		 <img src="images/Sharemi Arch.png" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 2-1:Architecture of Sharemi</p>
+	    </div>
+	 </div>
+         <p>Sharemi client is fundmentally a web broswer with some plugins accessing local devices. And the server is actually a PHP website which records all online users' current GPS location and his shared files.</p>
+         <h3>Section 3: Future of Sharemi</h3>
+         <p>Feature 1: bond location with service</p>
+         <p>Sharemi in the future can not only register files with the customer's current location to share with the other customers around him, but also be capable to bond files/service with a specified location. Like in the picture 4-1, the manager of Barco Law Building registers some files with the law building in the Sharemi.</p>
+         <div class="citeimg">
+		 <img src="images/4-1.png" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 4-1</p>
+	    </div>
+	 </div>
+         <p>In this case, when a Sharemi customer enters the area of Barco Law Building, the shared files of Barco Law Building will appear on the Sharemi (Like Picture 4-2).</p>
+         <div class="citeimg">
+		 <img src="images/4-2.png" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 4-2</p>
+	    </div>
+	 </div>
+         <p>Feature 2: Implementation of Ubiquitous Computing</p>
+         <p>Customers can register all kinds of service in Sharemi using Sharemi-locationService-Bridge.
+            For example, if there is a printer connected to a computer, then someone can use Sharemi-locationService-Bridge to register the printer in Sharemi, which enables people near the printer to use Sharemi to print files with that printer.
+            <br/>For example, manager of Barco Law Building want to register a public printer for students who near the building, so he uses Sharemi-locationService-Bridge (Picture 4-3).
+        </p>
+         <div class="citeimg">
+		 <img src="images/4-3.png" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 4-3</p>
+	    </div>
+	 </div>
+         <p>After he clicks "Enable Bridge", students near Barco Law Building will see this printer service in Sharemi (Picture 4-4).</p>
+         <div class="citeimg">
+		 <img src="images/4-4.png" alt="picture"/>
+	    <div class="tip">
+		<p>Picture 4-4</p>
+	    </div>
+	 </div>
+         <p>Besides print service, there are other kinds of local service can be shared by Sharemi like:</p>
+	<ul>
+	   <li>local Web Server (Individual homepages)</li>
+	   <li>local Web Service</li>
+	   <li>...</li>
+       </ul>
+         <p> The greatest technology breakthrough in Sharemi Ubiquitous Computing is that this idea can be implemented without additional devices/sensors, which makes it easy to promote to the public.</p>
+	 </div>
+	 <div id="digitalsales" style="display: none" class="mainpanel">
+	    <h2>DigitalSales Project</h2>
+            <h3>Section 1: Frontend Design Sample</h3>
+            <p>Because I have no access to the database on this server, I can only create a sample homepage from the project with as few modifications as I could.</p>
+            <a href="http://www.sis.pitt.edu/~xunxu/DigitalSalesSampleHomepage">Click Here To See the Sample Homepage</a>
+            <h3>Section 2: Use complex SQL queries to implement a search page</h3>
+            <div class="citeimg">
+		 <img src="images/searchSample.png" alt="picture"/>
+	    <div class="tip">
+		<p>Example of the Search Page</p>
+	    </div>
+            </div>
+            <p>Want to know more about the database design, <a  style="margin-left: 0px" href="http://www.sis.pitt.edu/~xunxu/files/A Glance at DigitalSales.docx">Click here</a></p>
+            <h3>Section3: Autimatically generate charts for store managers</h3>
+            <div class="citeimg" style="margin-top: 20px">
+		 <img src="images/chartSample.png" alt="picture"/>
+                <div class="tip">
+                    <p>Example of the Report Page for a store manager</p>
+                </div>
+            </div>
+         </div>
+	 <div id="eba" style="display: none" class="mainpanel">
+	    <h2>Estate Bubble Simulator Project</h2>
+            <p>In order to generate convincing results, I have to implement a system which allows hundreds of independent agents running in the same time, these agents perform the people of different roles in the real estate market, they make decisions based on BDI(Brief-Desire-Intention) model(means
+            the agents will always do thing they most want to do). This is really big project , so I divide it into 4 modules:</p>
+            <ul><li>Buyer/Saler Agents</li><li>Big Environment where Agents live</li><li>Special Module of monitoring agents and controlling the system</li><li>GUI module which tells the users what is going on in the system</li></ul>
+            <div class="citeimg">
+		 <img src="images/JackSample_1.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>System Architecture</p>
+                </div>
+            </div>
+            <h3>Module 1: Design Agents Behavior</h3>
+            <p>I define Agent behavior with help of the JACK IDE.</p>
+            <div class="citeimg">
+		 <img src="images/JackSample_2.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Behavior of Agents</p>
+                </div>
+            </div>
+            <h3>Module 2: Agents Management</h3>
+            <div class="citeimg">
+		 <img src="images/JackSample_3.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Class Diagram of Agent Management</p>
+                </div>
+            </div>
+            <h3>Module 3: Big Environment</h3>
+            <div class="citeimg">
+		 <img src="images/JackSample_4.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Class Diagram of Big Environment</p>
+                </div>
+            </div>
+         <h3>Module 4: GUI</h3>
+            <div class="citeimg">
+		 <img src="images/JackSample_5.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Class Diagram of GUI</p>
+                </div>
+            </div>
+            <h2>Runtime Snips</h2>
+            <div class="citeimg">
+		 <img src="images/JackSample_6.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Configuration before Starting</p>
+                </div>
+            </div>
+            <p>After the system is started, a dushbroad of the system will be showed.</p>
+            <div class="citeimg">
+		 <img src="images/JackSample_7.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Dushbroad</p>
+                </div>
+            </div>
+            <p>You can see a lot of different charts by switching Graph.</p>
+            <div class="citeimg">
+		 <img src="images/JackSample_8.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Switch Graphs</p>
+                </div>
+            </div>
+            <p>Also a user can change some runtime arguments at any time.</p>
+            <div class="citeimg">
+		 <img src="images/JackSample_9.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Change Arguments</p>
+                </div>
+            </div>
+            <p>And if a user is interested in the behavior of each individual agents, he can use the system logs.</p>
+            <div class="citeimg">
+		 <img src="images/JackSample_10.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>View Logs</p>
+                </div>
+            </div>
+	 </div>
+         <div id="xxsearcher" style="display: none" class="mainpanel">
+	    <h2>XX Searcher Project</h2>
+            <p>At first, I designed a large-scale distributed search engine architecture as the diagram below indicates.</p>
+            <div class="citeimg">
+		 <img src="images/XXSample_1.png" alt="picture"/>
+                <div class="tip">
+                    <p>XX Search Engine Architecture</p>
+                </div>
+            </div>
+            <p>Then because of the limitation of time, I only implement a undistributed version. However, this version of implement still contains essential search engine componets such as crawler,indexor,storage management,query processor.</p>
+            <h2>Runtime Snips</h2>
+            <p>Config Crawler: this time I decide to fetch 10000 web pages and begin with the following 8 links:</p>
+            <div class="citeimg">
+		 <img src="images/XXSample_0.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Prepare the Config files for Crawler</p>
+                </div>
+            </div>
+            <p>Then run Crawler.jar and finish crawling 10000 web pages.</p>
+            <div class="citeimg">
+		 <img src="images/XXSample_2.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Run Crawler.jar</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/XXSample_1.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>946MB of fecthed Data</p>
+                </div>
+            </div>
+            <p>Create Invert Index from the fetched data.</p>
+            <div class="citeimg">
+		 <img src="images/XXSample_5.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Create Inverted index</p>
+                </div>
+            </div>
+            <p>Open your brower and direct to the homepage of XX searcher, then search "Jobs" with it.</p>
+            <div class="citeimg">
+		 <img src="images/XXSample_3.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Start searching</p>
+                </div>
+            </div>
+            <p>After a short wait, you will get the result you want.</p>
+            <div class="citeimg">
+		 <img src="images/XXSample_4.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Search Result</p>
+                </div>
+            </div>
+            <p>And if you search "Dutch queen".</p>
+            <div class="citeimg">
+		 <img src="images/XXSample_6.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Search "Dutch Queen"</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/XXSample_7.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Result of "Dutch Queen"</p>
+                </div>
+            </div>
+	 </div>
+         <div id="zookeeper" style="display: none" class="mainpanel">
+	    <h2>ZooKeeper Project</h2>
+            <p>A java swing based graphics PC game which supports LAN battles.<br/>Game Rule: though swapping Adjacent animals to get three or more same animals connected to each other, the player will get these animals removed and get some points. And the person who reach the reach the required score in a limited time(Stort mode) or ahead of his opponent(LAN Mode) will win.</p>
+            <p>This project can also be divided into 4 modules: GUI Support, Game Logic, Network, File Management.</p>
+            <p>As a graphics game, the basic UI function which provided by java swing is far from enough, so I designed my own UI libaray extension to java swing.<a href="http://www.sis.pitt.edu/~xunxu/files/GUI.png">Click to see the class diagram of GUI module</a></p>
+            <p>Also, this game is running on a complex game logic.<a href="http://www.sis.pitt.edu/~xunxu/files/Game Logic.png">Click to see the class diagram of Game Logic module</a></p>
+            <h2>Runtime Snips</h2>
+            <div class="citeimg">
+		 <img src="images/ZooKeeper_1.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>ZooKeeper Start Page</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/ZooKeeper_2.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Load/Save Page</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/ZooKeeper_3.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Pick a Stage</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/ZooKeeper_5.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Page of Game</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/ZooKeeper_7.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Bonus Animal</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/ZooKeeper_9.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Page of LAN Host List</p>
+                </div>
+            </div>
+            <div class="citeimg">
+		 <img src="images/ZooKeeper_11.jpg" alt="picture"/>
+                <div class="tip">
+                    <p>Page of LAN Game Panel</p>
+                </div>
+            </div>
+	 </div>
+	 </div>
+	</body>
+</html>

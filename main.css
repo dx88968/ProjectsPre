@@ -1,0 +1,302 @@
+/* 
+    Document   : Style
+    Created on : 2011-2-18, 10:39:09
+    Author     : dx
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+	font-family: "Microsoft YaHei", "ËÎÌו", "Segoe UI", "verdana", "arial";
+	background-repeat: repeat-x;
+	background-color: #E8EAEF;
+	margin-top: 20px;
+	margin-left: 20px;
+	color: #575757;
+}
+
+.transparentMainpanel{
+    width: 1050px;
+    position: relative;  
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    overflow: visible;
+}
+
+.mainpanel
+{
+    width: 1050px;
+    position: relative;  
+    margin: 0 auto;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 1px 4px #CCCCCC;
+    margin-bottom: 30px;
+}
+
+.mainpanel h2{
+    color: #E47911;
+    padding: 0;
+    font-weight: bold;
+    line-height: 2.0em;
+    font-size: 20px;
+    font-family: arial,helvetica,sans-serif ;
+    margin-left: 30px;   
+}
+
+.mainpanel h3{
+    color: rgb(19,112,171);	font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 0px;
+    vertical-align: top;
+    margin-left: 30px;  
+}
+
+.mainpanel p{
+    margin-left: 30px; 
+}
+
+.mainpanel .citeimg{
+    text-align: center;
+}
+
+.citeimg img{
+    width: auto;
+    height: auto;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.citeimg .tip{
+    font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.citecode p{
+    width: 600px;
+    height: auto;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.citecode .tip{
+    font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+body.securityError
+{
+	font-family: "Microsoft YaHei", "ËÎÌו", "Segoe UI", "verdana" , "Arial";
+	background-repeat: repeat-x;
+	background-color: #E8EAEF;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+body.tabInfo
+{
+	background-image: none;
+	background-color: #F4F4F4;
+}
+       
+a
+{
+	color: rgb(19,112,171);	font-size: 1em;
+	font-weight: normal;
+	text-decoration: none;
+	margin-left: 0px;
+	vertical-align: top;
+}
+
+a{
+    margin-left: 30px;
+}
+
+a:link, a:visited
+{
+	color: rgb(19,112,171);
+	text-decoration: none;
+	vertical-align: top;
+}
+
+a:hover
+{
+	color: rgb(7,74,229);
+	text-decoration: underline;
+}
+
+p
+{
+	font-size: 0.9em;
+}
+
+h1 /* used for Title */
+{
+	color: #4465A2;
+	font-size: 1.1em;
+	font-weight: normal;
+	vertical-align:bottom;
+	margin-top: 7px;
+	margin-bottom: 4px;
+}
+
+h2 /* used for Heading in Main Body */
+{
+	font-size: 0.9em;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 1px;
+}
+
+h3 /* used for text in main body */
+{
+	font-size: 0.9em;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+h4 /* used for task links*/
+{
+	font-size: 0.9em;
+	font-weight: normal;
+	margin-top: 12px;
+	margin-bottom: 1px;
+}
+
+h5 /* used for Heading in InfoBlock */
+{
+	font-size: 1em;
+	font-weight: normal;
+	margin-bottom: 0px;
+	margin-top: 1px;
+	font-size: 0.9em;
+	color: #575757;
+}
+
+
+table {
+width: 700px;
+padding: 0;
+ margin-left: 20%;
+ margin-top: 30px;
+}
+
+caption {
+padding: 0 0 5px 0;
+width: 700px;
+font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+text-align: right;
+}
+
+th {
+font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #4f6b72;
+border-right: 1px solid #C1DAD7;
+border-bottom: 1px solid #C1DAD7;
+border-top: 1px solid #C1DAD7;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align: left;
+padding: 6px 6px 6px 12px;
+background: #CAE8EA no-repeat;
+}
+/*power by www.winshell.cn*/
+th.nobg {
+border-top: 0;
+border-left: 0;
+border-right: 1px solid #C1DAD7;
+background: none;
+}
+
+td {
+border-right: 1px solid #C1DAD7;
+border-bottom: 1px solid #C1DAD7;
+background: #fff;
+font-size:11px;
+padding: 6px 6px 6px 12px;
+color: #4f6b72;
+}
+/*power by www.winshell.cn*/
+
+td.alt {
+background: #F5FAFA;
+color: #797268;
+}
+
+th.spec {
+border-left: 1px solid #C1DAD7;
+border-top: 0;
+background: #fff no-repeat;
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+border-left: 1px solid #C1DAD7;
+border-top: 0;
+background: #f5fafa no-repeat;
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #797268;
+}
+
+.divider
+{
+	border-bottom: #B6BCC6 1px solid;
+}
+
+.cite{
+    color:rgb(19,112,171);
+    font-style: italic;
+}
+
+.tagList{
+    width: 1050px;
+    height: auto;
+    margin:0 auto;
+    padding: 0px;
+}
+
+.tag{
+    width: 120px;
+    height: 60px;
+    float: left;
+    margin-left: 5px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.tag h2{
+    color: #E47911;
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.4em;
+    font: bold 15px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tag h4{
+    color: #E47911;
+    padding: 0;
+    font-weight: bold;
+    line-height: 1.4em;
+    font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.tag:hover{
+    cursor: pointer;
+}
